@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Restaurant Menu Card</title>
+ 
+  <style>
+    body {
+      font-family: Georgia, serif;
+      background: linear-gradient(to bottom right, #ff7e5f, #feb47b, #2a9d8f);
+      background-attachment: fixed;
+      color: #410ada;
+      display: grid;
+      padding: 40px;
+      margin: 0;
+    }
+ 
+    .menu-card {
+      width: 683px;
+      border: 3px solid #8b4513;
+      border-radius: 15px;
+      background-color: rgba(241, 218, 8, 0.85); 
+      box-shadow: 0 8px 32px rgba(139, 69, 19, 0.3);
+      padding: 30px;
+      box-sizing: border-box;
+    }
+ 
+    .restaurant-name {
+      font-size: 42px;
+      font-weight: bold;
+      color: #8b0000;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      text-shadow: 2px 2px 4px #d2b48c;
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+ 
+    .tagline {
+      font-size: 18px;
+      font-style: italic;
+      text-align: center;
+      color: #6b4226;
+      margin-bottom: 30px;
+    }
+ 
+    .menu-section {
+      border: 2px solid #d2b48c;
+      box-shadow: 0 0 8px #d2b48c;
+      background-color: #ffffff;
+      padding: 20px;
+      margin-bottom: 25px;
+      border-radius: 8px;
+    }
+ 
+    .section-title {
+      font-size: 26px;
+      color: #a0522d;
+      text-transform: capitalize;
+      text-decoration: overline;
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+ 
+    .menu-item {
+      margin-bottom: 20px;
+    }
+
+    .menu-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .dish-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .dish-name {
+      font-size: 20px;
+      font-weight: bold;
+      color: #4b0082;
+      text-transform: capitalize;
+      margin: 0;
+      transition: transform 0.2s ease;
+      display: inline-block;
+    }
+ 
+    .dish-name:hover {
+      transform: scale(1.03);
+    }
+ 
+    .dish-price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #8b4513;
+    }
+
+    .dish-description {
+      font-size: 15px;
+      line-height: 1.6;
+      text-indent: 30px;
+      color: #555555;
+      margin: 5px 0 0 0;
+    }
+ 
+    .special-offer {
+      font-size: 22px;
+      font-weight: bold;
+      color: #ffffff;
+      background-color: #b22222;
+      text-align: center;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 3px #000000;
+      box-shadow: 0 0 12px #b22222;
+      transform: rotate(-2deg);
+      padding: 12px;
+      margin-top: 30px;
+      border-radius: 4px;
+    }
+
+    /* Styling for the footer info area */
+    .menu-footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 16px;
+      color: #2c055e;
+      border-top: 1px dashed #8b4513;
+      padding-top: 15px;
+    }
+
+    .menu-footer a {
+      color: #8b0000;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .menu-footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+ 
+<body>
+ 
+  <div class="menu-card">
+ 
+    <h1 class="restaurant-name">Tasty Treat Cafe</h1>
+    <p class="tagline">Fresh food, happy mood!</p>
+    
+    <!-- Starters Section -->
+    <div class="menu-section">
+      <h2 class="section-title">starters</h2>
+ 
+      <div class="menu-item">
+        <div class="dish-header">
+          <p class="dish-name">beef suya skewers</p>
+          <span class="dish-price">£7.50</span>
+        </div>
+        <p class="dish-description">
+          Thinly sliced, tender grilled beef coated in fiery yaji spice blend, served with sliced red onions.
+        </p>
+      </div>
+ 
+      <div class="menu-item">
+        <div class="dish-header">
+          <p class="dish-name">gourmet puff puff</p>
+          <span class="dish-price">£4.50</span>
+        </div>
+        <p class="dish-description">
+          Sweet, soft, and pillowy deep-fried dough balls, lightly dusted with powdered sugar.
+        </p>
+      </div>
+    </div>
+ 
+    <!-- Main Course Section -->
+    <div class="menu-section">
+      <h2 class="section-title">main course</h2>
+ 
+      <div class="menu-item">
+        <div class="dish-header">
+          <p class="dish-name">party jollof rice</p>
+          <span class="dish-price">£13.50</span>
+        </div>
+        <p class="dish-description">
+          Richly seasoned, smoky long-grain rice served with sweet fried plantains and grilled chicken.
+        </p>
+      </div>
+ 
+      <div class="menu-item">
+        <div class="dish-header">
+          <p class="dish-name">efo riro &amp; pounded yam</p>
+          <span class="dish-price">£15.00</span>
+        </div>
+        <p class="dish-description">
+          A rich, savoury spinach stew cooked with palm oil and assorted meats, paired with smooth pounded yam.
+        </p>
+      </div>
+    </div>
+
+    <!-- Desserts Section -->
+    <div class="menu-section">
+      <h2 class="section-title">desserts</h2>
+ 
+      <div class="menu-item">
+        <div class="dish-header">
+          <p class="dish-name">chin chin yogurt parfait</p>
+          <span class="dish-price">£5.50</span>
+        </div>
+        <p class="dish-description">
+          Layers of creamy Greek yogurt, sweet mixed berry compote, and crunchy, golden spiced chin chin pieces.
+        </p>
+      </div>
+ 
+      <div class="menu-item">
+        <div class="dish-header">
+          <p class="dish-name">coconut candy ice cream</p>
+          <span class="dish-price">£6.00</span>
+        </div>
+        <p class="dish-description">
+          Rich vanilla bean ice cream folded with chewy caramelised Nigerian coconut candy flakes.
+        </p>
+      </div>
+    </div>
+ 
+    <p class="special-offer">Weekend special: 20% off!</p>
+
+    <!-- Footer with Telephone Link -->
+    <div class="menu-footer">
+      <p>For reservations or takeaway orders, please call: <a href="tel:+441942000000">01942 000000</a></p>
+    </div>
+ 
+  </div>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Restaurant Menu Card</title>
+ 
+  <style>
+    body {
+  font-family: Georgia, serif; 
+  background: linear-gradient(to bottom right, #ff7e5f, #feb47b, #2a9d8f); 
+  background-attachment: fixed; 
+  color: #410ada; 
+  display: grid; 
+  padding: 40px; 
+  margin: 0; 
+  min-height: 100%;
+}
+ 
+    .menu-card {
+      width: 683px;
+      border: 3px solid #8b4513;
+      border-radius: 15px;
+      background-color: rgba(241, 218, 8, 0.85); 
+      box-shadow: 0 8px 32px rgba(139, 69, 19, 0.3);
+      padding: 30px;
+      box-sizing: border-box;
+    }
+ 
+    .restaurant-name {
+      font-size: 42px;
+      font-weight: bold;
+      color: #8b0000;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      text-shadow: 2px 2px 4px #d2b48c;
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+ 
+    .tagline {
+      font-size: 18px;
+      font-style: italic;
+      text-align: center;
+      color: #6b4226;
+      margin-bottom: 30px;
+    }
+ 
+    .menu-section {
+      border: 2px solid #d2b48c;
+      box-shadow: 0 0 8px #d2b48c;
+      background-color: #ffffff;
+      padding: 20px;
+      margin-bottom: 25px;
+      border-radius: 8px;
+    }
+ 
+    .section-title {
+      font-size: 26px;
+      color: #a0522d;
+      text-transform: capitalize;
+      text-decoration: overline;
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+ 
+    .menu-item {
+      margin-bottom: 20px;
+    }
+
+    .menu-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .dish-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .dish-name {
+      font-size: 20px;
+      font-weight: bold;
+      color: #4b0082;
+      text-transform: capitalize;
+      margin: 0;
+      transition: transform 0.2s ease;
+      display: inline-block;
+    }
+ 
+    .dish-name:hover {
+      transform: scale(1.03);
+    }
+ 
+    .dish-price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #8b4513;
+    }
+
+    .dish-description {
+      font-size: 15px;
+      line-height: 1.6;
+      text-indent: 30px;
+      color: #555555;
+      margin: 5px 0 0 0;
+    }
+ 
+    .special-offer {
+      font-size: 22px;
+      font-weight: bold;
+      color: #ffffff;
+      background-color: #b22222;
+      text-align: center;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 3px #000000;
+      box-shadow: 0 0 12px #b22222;
+      transform: rotate(-2deg);
+      padding: 12px;
+      margin-top: 30px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+ 
+<body>
+ 
+  <div class="menu-card">
+ 
+    <h1 class="restaurant-name">First Love At Sight</h1>
+    <p class="tagline">Sweet treat, nice eat!</p>
+    <p class="tagline">Crunchy bite, pure delight!</p>
+    <div class="menu-section">
+      <h2 class="section-title">starters</h2>
+ 
+      <div class="menu-item">
+        <div class="dish-header">
+          <p class="dish-name">beef suya skewers</p>
+          <span class="dish-price">£7.50</span>
+        </div>
+        <p class="dish-description">
+          Thinly sliced, tender grilled beef coated in fiery yaji spice blend, served with sliced red onions.
+        </p>
+      </div>
+ 
+      <div class="menu-item">
+        <div class="dish-header">
+          <p class="dish-name">gourmet puff puff</p>
+          <span class="dish-price">£4.50</span>
+        </div>
+        <p class="dish-description">
+          Sweet, soft, and pillowy deep-fried dough balls, lightly dusted with powdered sugar.
+        </p>
+      </div>
+    </div>
+    <div class="menu-section">
+      <h2 class="section-title">main course</h2>
+ 
+      <div class="menu-item">
+        <div class="dish-header">
+          <p class="dish-name">party jollof rice</p>
+          <span class="dish-price">£13.50</span>
+        </div>
+        <p class="dish-description">
+          Richly seasoned, smoky long-grain rice served with sweet fried plantains and grilled chicken.
+        </p>
+      </div>
+ 
+      <div class="menu-item">
+        <div class="dish-header">
+          <p class="dish-name">efo riro &amp; pounded yam</p>
+          <span class="dish-price">£15.00</span>
+        </div>
+        <p class="dish-description">
+          A rich, savoury spinach stew cooked with palm oil and assorted meats, paired with smooth pounded yam.
+        </p>
+      </div>
+    </div>
+    <div class="menu-section">
+      <h2 class="section-title">desserts</h2>
+ 
+      <div class="menu-item">
+        <div class="dish-header">
+          <p class="dish-name">chin chin yogurt parfait</p>
+          <span class="dish-price">£5.50</span>
+        </div>
+        <p class="dish-description">
+          Layers of creamy Greek yogurt, sweet mixed berry compote, and crunchy, golden spiced chin chin pieces.
+        </p>
+      </div>
+      <div class="menu-item">
+        <div class="dish-header">
+          <p class="dish-name">coconut candy ice cream</p>
+          <span class="dish-price">£6.00</span>
+        </div>
+        <p class="dish-description">
+          Rich vanilla bean ice cream folded with chewy caramelised Nigerian coconut candy flakes.
+        </p>
+      </div>
+    </div>
+ 
+    <p class="special-offer">Weekend special: 20% off!</p>
+  </div>
+
+</body>
+</html>
